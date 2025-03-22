@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Что на ужин?</string>
+
+    <string name="something_went_wrong">Упс, что-то пошло не так!</string>
+    <string name="dishes_loading">Происходит загрузка блюд</string>
+
+    <string name="russian_formatted_date_january">%1$s января %2$s %3$s:%4$s </string>
+    <string name="russian_formatted_date_february">%1$s февраля %2$s %3$s:%4$s </string>
+    <string name="russian_formatted_date_march">%1$s марта %2$s %3$s:%4$s </string>
+    <string name="russian_formatted_date_april">%1$s апреля %2$s %3$s:%4$s </string>
+    <string name="russian_formatted_date_may">%1$s мая %2$s %3$s:%4$s </string>
+    <string name="russian_formatted_date_june">%1$s июня %2$s %3$s:%4$s </string>
+    <string name="russian_formatted_date_july">%1$s июля %2$s %3$s:%4$s </string>
+    <string name="russian_formatted_date_august">%1$s августа %2$s %3$s:%4$s </string>
+    <string name="russian_formatted_date_september">%1$s сентября %2$s %3$s:%4$s </string>
+    <string name="russian_formatted_date_october">%1$s октября %2$s %3$s:%4$s </string>
+    <string name="russian_formatted_date_november">%1$s ноября %2$s %3$s:%4$s </string>
+    <string name="russian_formatted_date_december">%1$s декабря %2$s %3$s:%4$s </string>
+
+    <string name="tags_screen_title">Теги</string>
+    <string name="ingredient_tag_screen_title">Ингредиенты</string>
+    <string name="type_tag_screen_title">Тип блюда</string>
+    <string name="holiday_tag_screen_title">Праздник</string>
+    <string name="settings_screen_title">Настройки</string>
+
+
+    <string name="accept_dish_desc">Принять блюдо</string>
+    <string name="reject_dish_desc">Отклонить блюдо</string>
+    <string name="settings_button_desc">Зайти в настройки</string>
+    <string name="history_button_desc">Зайти в историю выбранных блюд</string>
+    <string name="back_button_desc">Back</string>
+    <string name="ingredient_tags_desc">Выбрать ингредиенты</string>
+    <string name="type_tags_desc">Выбрать тип блюда</string>
+    <string name="holiday_tags_desc">Выбрать праздник</string>
+    <string name="save_changes_desc">saveChanges</string>
+    <string name="refresh_tags_desc">refresh_tags</string>
+    <string name="clear_history_desc">clear_history</string>
+    <string name="delete_dish_from_history_desc">Удалить блюдо из истории</string>
+
+</resources>

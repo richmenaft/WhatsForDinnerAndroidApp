@@ -13,9 +13,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
@@ -241,10 +243,24 @@ fun HistoryListElement(
                     }
                 )
             Box(
-                Modifier
+                contentAlignment = Alignment.CenterEnd,
+                modifier = Modifier
                     .fillMaxSize()
                     .background(color.value)
-            )
+            ) {
+                if (dismissState.targetValue == SwipeToDismissBoxValue.EndToStart) {
+                    Icon(
+                        imageVector = Icons.Filled.Delete,
+                        tint = Color.White,
+                        contentDescription = stringResource(R.string.delete_dish_from_history_desc),
+                        modifier = Modifier
+                            .padding(
+                                end = 10.dp
+                            )
+                            .size(45.dp)
+                    )
+                }
+            }
         },
         modifier = Modifier
             .padding(dimensionResource(R.dimen.padding_medium)),

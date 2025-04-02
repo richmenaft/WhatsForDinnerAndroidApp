@@ -184,23 +184,28 @@ fun HistoryList(
     dishes: List<HistoryDish>,
     contentPadding: PaddingValues,
     onDelete: (HistoryDish) -> Unit,
-    modifier: Modifier = Modifier,
+    modifier: Modifier = Modifier
 ) {
+
     LazyColumn(
         contentPadding = contentPadding,
     ) {
         items(dishes, key = { dish ->
             dish.id
         }) { dish ->
-            HistoryListElement(
-                title = dish.title,
-                date = dish.date,
-                imageUrl = dish.imageUrl,
-                imageContentDescription = dish.imageContentDescription,
-                onDelete = {
-                    onDelete(dish)
-                },
-            )
+            Row(
+                modifier = Modifier.animateItem()
+            ) {
+                HistoryListElement(
+                    title = dish.title,
+                    date = dish.date,
+                    imageUrl = dish.imageUrl,
+                    imageContentDescription = dish.imageContentDescription,
+                    onDelete = {
+                        onDelete(dish)
+                    },
+                )
+            }
         }
     }
 }
@@ -230,7 +235,6 @@ fun HistoryListElement(
             }
         }
     )
-
     SwipeToDismissBox(
         state = dismissState,
         backgroundContent = {
